@@ -1,4 +1,4 @@
-# shopmate
+# shopmate : Something for students to poke around with
 
 This application was generated using JHipster 8.4.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.4.0](https://www.jhipster.tech/documentation-archive/v8.4.0).
 
