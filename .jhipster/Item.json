@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20240507192601"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "Category",
+      "fieldValues": "FOOD (Food),SUPPLIES (Supplies),OTHER (Other)"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Item",
+  "relationships": [
+    {
+      "otherEntityName": "trip",
+      "otherEntityRelationshipName": "items",
+      "relationshipName": "trips",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

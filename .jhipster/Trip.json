@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240507192600"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "budget",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Trip",
+  "relationships": [
+    {
+      "otherEntityName": "item",
+      "otherEntityRelationshipName": "trips",
+      "relationshipName": "items",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "vendor",
+      "otherEntityRelationshipName": "trips",
+      "relationshipName": "vendor",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "trips",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240507192603"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "nickName",
+      "fieldType": "String"
+    }
+  ],
+  "name": "UserProfile",
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "trip",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "trips",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}
